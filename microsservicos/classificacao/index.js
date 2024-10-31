@@ -9,7 +9,7 @@ const palavraChave = 'importante'
 const funcoes = {
   ObservacaoCriada: (observacao) => {
     observacao.status = observacao.texto.includes(palavraChave) ? 'importante' : 'comum'
-    axios.post('http://192.168.79.167:10000/eventos', {
+    axios.post('http://192.168.100.157:10000/eventos', {
       type: 'ObservacaoClassificada',
       payload: observacao
     })
